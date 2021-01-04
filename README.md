@@ -2,7 +2,7 @@
 
 ![GitHub Actions Status](https://github.com/wesleimp/asdf-dotenv-linter/workflows/ci/badge.svg?branch=master)
 
-[dotenv-linter](https://dotenv-linter.github.io/) [plugin](https://github.com/asdf-vm/asdf-plugins) for [asdf](https://github.com/asdf-vm/asdf) version manager
+[dotenv-linter](https://dotenv-linter.github.io/) plugin for [asdf](https://github.com/asdf-vm/asdf) version manager
 
 ## Install
 
