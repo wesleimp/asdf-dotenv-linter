@@ -105,4 +105,4 @@ get_download_url() {
   echo "https://github.com/dotenv-linter/dotenv-linter/releases/download/v${version}/dotenv-linter-${platform}-${arch}.${ext}"
 }
 
-install_goreleaser "$ASDF_INSTALL_TYPE" "$ASDF_INSTALL_VERSION" "$ASDF_INSTALL_PATH"
+install_dotenv_linter "$ASDF_INSTALL_TYPE" "$ASDF_INSTALL_VERSION" "$ASDF_INSTALL_PATH"
