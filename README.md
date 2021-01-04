@@ -7,7 +7,7 @@
 ## Install
 
 ```
-asdf plugin-add dotenv-linter https://github.com/kforsthoevel/asdf-dotenv-linter.git
+asdf plugin-add dotenv-linter https://github.com/wesleimp/asdf-dotenv-linter.git
 ```
 
 ## Use
