@@ -12,24 +12,18 @@ install_dotenv_linter() {
   local install_type
   # shellcheck disable=SC2034
   install_type=$1
-
   local version
   version=$2
-
   local install_path
   install_path=$3
-
   local bin_install_path
   bin_install_path="$install_path/bin"
-  
   local download_url
   download_url="$(get_download_url "$version")"
-
   local ext
   ext="$(get_ext)"
 
   mkdir -p "${bin_install_path}"
-
   local bin_path="${bin_install_path}/dotenv-linter"
   echo "Downloading dotenv-linter from ${download_url}"
   curl -sSL "$download_url" -o "${install_path}/dotenv-linter.${ext}"
@@ -38,7 +32,6 @@ install_dotenv_linter() {
   else
     unzip -qq "${install_path}/dotenv-linter.zip" -d "${install_path}"
   fi
-
   mv "${install_path}/dotenv-linter" "${bin_path}"
   chmod +x "$bin_path"
   rm -rf "${install_path}/dotenv-linter.${ext}"
@@ -92,13 +85,10 @@ get_ext() {
 get_download_url() {
   local version
   version="$1"
-  
   local arch
   arch="$(get_arch)"
-
   local platform
   platform="$(get_platform)"
-
   local ext
   ext="$(get_ext)"
 
